@@ -3,4 +3,8 @@
     <string name="name">Toyyibat Abdulkareem</string>
     <string name="track">Andriod Developer</string>
     <string name="text">I am a lover of mobile Technology, kotlin is a very interesting programming language</string>
+    <string name="error_invalid_password">Invalid password</string>
+    <string name="error_field_required">field required</string>
+    <string name="error_invalid_email">invalid email</string>
+
 </resources>

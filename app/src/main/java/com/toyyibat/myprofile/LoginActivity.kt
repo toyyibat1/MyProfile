@@ -67,11 +67,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Attempts to sign in or register the account specified by the login form.
-     * If there are form errors (invalid email, missing fields, etc.), the
-     * errors are presented and no actual login attempt is made.
-     */
+
     private fun attemptLogin() { // Reset errors.
         mEmailView!!.error = null
         mPasswordView!!.error = null
@@ -96,8 +92,7 @@ class LoginActivity : AppCompatActivity() {
             focusView = mEmailView
             cancel = true
         }
-        if (cancel) { // There was an error; don't attempt login and focus the first
-// form field with an error.
+        if (cancel) {
             focusView!!.requestFocus()
         } else { // save data in local shared preferences
             if (checkBoxRememberMe!!.isChecked) saveLoginDetails(email, password)

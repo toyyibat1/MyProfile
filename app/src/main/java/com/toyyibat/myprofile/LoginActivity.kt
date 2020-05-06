@@ -115,11 +115,11 @@ class LoginActivity : AppCompatActivity() {
         PrefManager(this).saveLoginDetails(email, password)
     }
 
-    private fun isEmailValid(email: String): Boolean { //TODO: Replace this with your own logic
+    private fun isEmailValid(email: String): Boolean {
         return email.contains("@")
     }
 
-    private fun isPasswordValid(password: String): Boolean { //TODO: Replace this with your own logic
+    private fun isPasswordValid(password: String): Boolean {
         return password.length > 4
     }
 }
